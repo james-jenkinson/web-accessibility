@@ -4,18 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landmarks | Web Accessibility</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>This content is part of the header</header>
-    <main>
-      <h1>Landmarks</h1>
-      <p>This content is part of the main</p>
+    <header>
+      <svg
+        viewBox="0 0 512 512"
+        width="100"
+        title="Pizza slice"
+        role="img"
+        aria-label="Site logo"
+      >
+        <path
+          d="M158.87.15c-16.16-1.52-31.2 8.42-35.33 24.12l-14.81 56.27c187.62 5.49 314.54 130.61 322.48 317l56.94-15.78c15.72-4.36 25.49-19.68 23.62-35.9C490.89 165.08 340.78 17.32 158.87.15zm-58.47 112L.55 491.64a16.21 16.21 0 0 0 20 19.75l379-105.1c-4.27-174.89-123.08-292.14-299.15-294.1zM128 416a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm48-152a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm104 104a32 32 0 1 1 32-32 32 32 0 0 1-32 32z"
+        />
+      </svg>
+      Header
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <section aria-label="Section 1">
-        <h2>Section 1</h2>
-        <p>This content is part of a section</p>
-      </section>
+    <main>
+      <div>
+        <h1>Landmarks</h1>
+        <p>This content is part of the main</p>
+
+        <section aria-label="Section 1">
+          <h2>Section 1</h2>
+          <p>This content is part of a section</p>
+        </section>
+
+        <section>
+          <h2 level="3">Section 2</h2>
+          <p>
+            This content is in a section element, but it is not labelled, so it
+            does not show up as a landmark
+          </p>
+        </section>
+      </div>
+
+      <aside>
+        <h2>Aside</h2>
+        <p>This content is part of an aside</p>
+
+        <nav aria-label="Aside">
+          <ul>
+            <li><a href="#">Aside link 1</a></li>
+            <li><a href="#">Aside link 2</a></li>
+            <li><a href="#">Aside link 3</a></li>
+          </ul>
+        </nav>
+      </aside>
     </main>
-    <footer>This content is part of the footer</footer>
+
+    <footer>
+      This content is part of the footer
+
+      <nav aria-label="Footer">
+        <ul>
+          <li>
+            <a href="#">Legal Disclaimer</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Terms of Service</a>
+          </li>
+        </ul>
+      </nav>
+
+      <address>
+        Web Accessibility Project<br />
+        123 Inclusive Web Ave.<br />
+        Access City, AX 12345<br />
+        <a href="mailto:info@webaccessibility.com">info@webaccessibility.com</a>
+      </address>
+    </footer>
   </body>
 </html>

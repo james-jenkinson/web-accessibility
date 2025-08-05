@@ -1,0 +1,122 @@
+:root {
+    /* Dark off-black background */
+    --background: #121212;
+    --background-secondary: #1e1e1e;
+    /* Light gray text */
+    --text: #f0f0f0;
+    /* Accent color */
+    --accent: #6fb5ff;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex: 1 0 auto;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header, footer {
+    background-color: var(--background-secondary);
+
+    nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+aside {
+    max-width: 300px;
+    background-color: var(--background-secondary);
+    border-radius: 1rem;
+    border: 2px solid var(--accent);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0rem;
+
+    li {
+        margin: 0.5rem;
+    }
+}
+
+header,
+main,
+footer {
+    padding: 1rem;
+}
+
+footer > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+* {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+svg {
+    fill: var(--accent);
+}
+
+h1 {
+    color: var(--accent);
+}
+
+a {
+    color: var(--accent);
+}
+
+.atkinson-hyperlegible-regular {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .atkinson-hyperlegible-bold {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .atkinson-hyperlegible-regular-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .atkinson-hyperlegible-bold-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
