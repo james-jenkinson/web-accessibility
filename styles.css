@@ -1,10 +1,7 @@
 :root {
-    /* Dark off-black background */
     --background: #121212;
     --background-secondary: #1e1e1e;
-    /* Light gray text */
     --text: #f0f0f0;
-    /* Accent color */
     --accent: #6fb5ff;
 }
 
@@ -44,7 +41,7 @@ header, footer {
     }
 }
 
-main {
+main:has(aside) {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
